@@ -1,0 +1,47 @@
+Info) VMD for LINUXAMD64, version 1.9.4a44 (June 15, 2020)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 40 CPUs detected.
+Info)   CPU features: SSE2 AVX AVX2 FMA 
+Info) Free system memory: 243GB (96%)
+Info) Creating CUDA device pool and initializing hardware...
+Info) Detected 1 available CUDA accelerator::
+Info) [0] GeForce GTX TITAN X  24 SM_5.2 1.1 GHz, 12GB RAM SP32 AE2 ZC
+Info) Detected 1 available TachyonL/OptiX ray tracing accelerator
+Info)   Compiling 1 OptiX shaders on 1 target GPU...
+Info) Dynamically loaded 3 plugins in directory:
+Info) /Projects/vmd/pub/linux64/lib/vmd194a44/plugins/LINUXAMD64/molfile
+Info) File loading in progress, please wait.
+psfplugin) Detected a Charmm PSF file
+psfplugin) Detected a Charmm PSF EXTEnded file
+Info) Using plugin psf for structure file ../ionized.psf
+Info) Analyzing structure ...
+Info)    Atoms: 204638
+Info)    Bonds: 144041
+Info)    Angles: 102442  Dihedrals: 60551  Impropers: 4224  Cross-terms: 1488
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 62328
+Info)    Waters: 60353
+Info)    Segments: 62
+Info)    Fragments: 60840   Protein: 48   Nucleic: 0
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+Info) Using plugin dcd for coordinates from file ../t_50ns_stride2.dcd
+Info) Coordinate I/O rate 640.8 frames/sec, 1500 MB/sec, 3.9 sec
+Info) Finished with coordinate file ../t_50ns_stride2.dcd.
+after#0
+/Projects/ssen/opt/vmd_plugin /Projects/vmd/pub/linux64/lib/vmd194a44/scripts/tcl8.5 /Projects/vmd/pub/linux64/lib/vmd194a44/scripts /Projects/vmd/pub/linux64/lib/lib /Projects/johns/tcl/8.5.6/lib_LINUXAMD64/lib /Projects/vmd/pub/linux64/lib/vmd194a44/scripts/vmd /Projects/vmd/pub/linux64/lib/vmd194a44/plugins/LINUXAMD64/tcl /Projects/vmd/pub/linux64/lib/vmd194a44/plugins/noarch/tcl
+2500
+8
+40
+0.0
+residue contact probability 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 719.0 0.0 1249.0 1247.0 1250.0 0.0 0.0 845.0 656.0 0.0 7.0 1242.0 0.0 1250.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.5752 0.0 0.9992000000000001 0.9976 1.0 0.0 0.0 0.676 0.5248 0.0 0.0056 0.9936 0.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+file25
+contact probability calculation done
+Info) VMD for LINUXAMD64, version 1.9.4a44 (June 15, 2020)
+Info) Exiting normally.
