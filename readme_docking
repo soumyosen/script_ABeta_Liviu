@@ -1,0 +1,28 @@
+Step1: use extract_pdb.tcl to extract frames from the simulated trajectory. Before extracting the final pdbs, it is good to centerize the part 
+       of the protein necessary for docking to (0 0 0)
+
+Step2: use "make_receptor_pdbqt.sh 1 5" to create pdbqt files from the pdbs of the frames
+
+Step3: To create the ligand pdbqt from pdb it is preferable to open the structure in autodock tool. Then you can rigid the structure by 
+       deactivating all the torsions or you can keep activate few torsion and deactivate few and then save the pdbqt of the ligand 
+
+Step4: Check the box size and the center of the receptor in autodock tools and modify make_confs.sh script and run it "make_confs.sh 1 5"
+
+Step5: make the necessary folders according to make_conf.sh and run submit_docking.sh
+
+Step6: use "./get_pdb_from_pdbqt.sh 1 5" to convert output pdbqt after docking to pdb
+
+Step7: lig_break_foreach_frm.tcl use this script to extract each pose of ligand for each frame. After extracting in the file name first number
+       is the frame number and the second one is pose number
+
+Step8: use this script "combine_receptor_ligand.sh 1 5" to combine the receptor and ligand poses. To create a complete trajectory with file extension .pdb, use combine_pdb.py in complex_pdb folder. In VMD, .pdb trajectory can be converted to .js format
+
+Step9: In vmd we can make occupancy map of the ligand
+
+Step10: Extract energy from the pdbqt file after docking using get_energies.sh script
+
+Step11: In vmd tk console run "energy_beta_pdb.tcl" in energy_files folder to create pdbs with energy value in beta column of the pdb
+
+Step12: Combine all the ligand pdbs in one file using "combine_all_lig.sh 1 5" script
+
+Step13: bring last frame of receptor or protein. open combined pdb of the ligands and receptor pdb. color ligands by energy or beta column of ligand pdb.
